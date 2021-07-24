@@ -1,0 +1,140 @@
+/* Hidden navbar on mobile and tablet*/
+@media (max-width: 1023px) {
+    .header {
+        position: fixed;
+        width: 100vw;
+        z-index: 100;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .search-list {
+        display: none !important;
+    }
+
+    .content__filter {
+        display: none;
+    }
+
+    .container-content {
+        margin-top: 0;
+    }
+
+    .mobile-tablet-category {
+        display: flex;
+        overflow-y: auto;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .mobile-tablet-category i {
+        background-color: rgba(168, 162, 162, 0.644);
+        height: 30px;
+        width: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Hidden navbar on Tablet*/
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navbar-search {
+        margin: 0 80px;
+    }
+
+    .navbar__logo {
+        display: none !important;
+    }
+
+    .navbar__shopping-cart {
+        margin: 14px 0;
+    }
+
+    .navbar__order-list {
+        right: 0;
+        top: 52px;
+        width: 80vw;
+    }
+
+    .container {
+        padding-top: 56px;
+    }
+}
+
+/* Hidden navbar on Mobile*/
+@media (max-width: 740px) {
+    .navbar-search {
+        margin: 0 20px;
+    }
+
+    .navbar__search-icon--on-mobile {
+        display: block;
+        order: -1;
+        color: #fff;
+        font-size: 2.4rem;
+        padding: 20px 8px;
+    }
+
+    .navbar__search-icon--on-mobile:checked ~ .navbar__search-engine {
+        display: flex;
+    }
+
+    #navbar__mobile-input {
+        display: none;
+    }
+
+    #navbar__mobile-input:checked ~ .navbar__search-engine {
+        display: flex;
+        position: absolute;
+        box-shadow: 0 1px 6px #8b8585;
+        top: 88px;
+        margin: 0 36px;
+        width: 80%;
+    }    
+    
+    .search-btn {
+        left: -4px;
+    }
+
+    .navbar__search-engine {
+        display: none;
+    }
+
+    .navbar__logo-shopee {
+        margin: 16px 0;
+    }
+
+    .navbar__shopping-cart {
+        margin: 14px 0;
+    }
+
+    .navbar__order-list {
+        right: 0;
+        top: 52px;
+        width: 80vw;
+    }
+
+    .container {
+        padding-top: 84px;
+    }
+
+    .container-content {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer--wrap-app {
+        height: 16px;
+        width: 80px;
+    }
+
+    .footer--wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
